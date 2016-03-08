@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://gitlab.com/khazra/admin-tools/issues"
   },
-  "homepage": "https://gitlab.com/khazra/admin-tools#README"
+  "homepage": "https://gitlab.com/khazra/admin-tools#README",
+  "devDependencies": {
+    "gobble": "^0.10.2"
+  }
 }

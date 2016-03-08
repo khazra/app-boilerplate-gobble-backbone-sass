@@ -1,0 +1,19 @@
+{
+  "name": "btd-admin-tools",
+  "version": "0.0.1",
+  "description": "Admin Tools",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/khazra/admin-tools.git"
+  },
+  "author": "michal.kloczko@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/khazra/admin-tools/issues"
+  },
+  "homepage": "https://gitlab.com/khazra/admin-tools#README"
+}

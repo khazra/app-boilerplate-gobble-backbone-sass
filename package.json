@@ -17,6 +17,9 @@
   },
   "homepage": "https://gitlab.com/khazra/admin-tools#README",
   "devDependencies": {
-    "gobble": "^0.10.2"
+    "gobble": "^0.10.2",
+    "gobble-browserify": "^0.6.1",
+    "gobble-sass": "^0.5.0",
+    "jquery-browserify": "^1.8.1"
   }
 }

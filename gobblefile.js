@@ -3,7 +3,7 @@ var gobble = require('gobble');
 module.exports = gobble([
     gobble('src/root'),
     sassifyStyles('src/styles'),
-    browserifyScripts('src/scripts')
+    processScripts('src/scripts')
 ]);
 
 function sassifyStyles(sourceDir) {
@@ -16,10 +16,13 @@ function sassifyStyles(sourceDir) {
 
 }
 
-function browserifyScripts(sourceDir) {
+function processScripts(sourceDir) {
 
     return gobble(sourceDir)
-        .transform('browserify', {
+        .transform('babel', {
+            sourceMaps: true
+        })
+        .transform('khazra-browserify', {
             entries: 'app.js',
             dest: 'app.js',
             debug: true

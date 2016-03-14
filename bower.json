@@ -1,0 +1,8 @@
+{
+  "name": "btd-admin-tools",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "bootstrap": "v4.0.0-alpha.2"
+  }
+}

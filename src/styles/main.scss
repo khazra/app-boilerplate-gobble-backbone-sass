@@ -1,8 +1,13 @@
-body {
-    width: 100%;
-}
+/* vendor styles */
 
-h1 {
-    font-size: 20px;
-    color: blue;
-}
+@import '../../bower_components/bootstrap/scss/bootstrap-reboot.scss';
+
+/* variables, mixins, etc. */
+
+@import 'void/variables/colors.scss';
+
+/* components, app resusable styles */
+
+@import 'components/base.scss';
+
+/* view specyfic styles */

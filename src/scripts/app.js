@@ -1,2 +1,6 @@
-var DashboardView = require('./dashboard/dashboard.view.js');
-var dashboardView = new DashboardView();
+'use strict';
+
+var DashboardView = require('./dashboard/dashboard.view.js'),
+    dashboardView;
+
+dashboardView = new DashboardView();

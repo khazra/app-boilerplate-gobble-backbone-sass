@@ -9,7 +9,7 @@ module.exports = Backbone.View.extend({
     },
 
     render: function() {
-        $('#content').prepend('<p>vieeeew!</p>');
+        $('#content').prepend('<p>App Boilerplate - Gobble, Babel, Browserify, Sass, Backbone v4</p>');
     }
 
 });

@@ -5,7 +5,8 @@ module.exports = gobble([
     gobble('src/root'),
     sassifyStyles('src/styles'),
     processScripts('src/scripts'),
-    jshint('src/scripts')
+    jshint('src/scripts'),
+    mochaTests('test')
 ]);
 
 function sassifyStyles(sourceDir) {
@@ -60,5 +61,16 @@ function jshint(sourceDir) {
 
         });
     }
+
+}
+
+function mochaTests(testDir) {
+
+    return gobble([
+      gobble(testDir).moveTo(testDir)
+    ])
+      .observe('mocha', {
+        testDir: testDir
+      });
 
 }

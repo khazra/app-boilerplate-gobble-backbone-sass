@@ -4,8 +4,8 @@ var stylish = require('jshint-stylish');
 module.exports = gobble([
     gobble('src/root'),
     sassifyStyles('src/styles'),
-    jshint('src/scripts'),
-    processScripts('src/scripts')
+    processScripts('src/scripts'),
+    jshint('src/scripts')
 ]);
 
 function sassifyStyles(sourceDir) {

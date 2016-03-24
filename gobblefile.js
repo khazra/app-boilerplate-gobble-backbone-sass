@@ -2,12 +2,12 @@ var gobble = require('gobble');
 var stylish = require('jshint-stylish');
 
 module.exports = gobble([
-    gobble('src/root'),
-    sassifyStyles('src/styles'),
-    processScripts('src/scripts'),
-    jshint('src/scripts'),
-    mochaTests('test')
-]);
+        gobble('src/root'),
+        sassifyStyles('src/styles'),
+        processScripts('src/scripts'),
+        jshint('src/scripts'),
+        mochaTests('src/scripts', 'test')
+    ]);
 
 function sassifyStyles(sourceDir) {
 
@@ -64,9 +64,10 @@ function jshint(sourceDir) {
 
 }
 
-function mochaTests(testDir) {
+function mochaTests(srcDir, testDir) {
 
     return gobble([
+      gobble(srcDir).moveTo(srcDir),
       gobble(testDir).moveTo(testDir)
     ])
       .observe('mocha', {
